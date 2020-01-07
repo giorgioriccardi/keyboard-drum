@@ -12,7 +12,8 @@ html {
   font-family: sans-serif;
 }
 
-.keys {
+.keys,
+.keyboardRows {
   display: flex;
   flex: 1;
   min-height: 100vh;

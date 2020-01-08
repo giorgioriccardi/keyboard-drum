@@ -8,27 +8,27 @@
   <body>
     <div class="keys">
       <div class="keyboardRows keyboardRow-1">
-        <div data-key="65" class="key">
+        <div data-key="xx" class="key">
           <kbd>1</kbd>
           <span class="sound">clap</span>
         </div>
-        <div data-key="83" class="key">
+        <div data-key="xx" class="key">
           <kbd>2</kbd>
           <span class="sound">hihat</span>
         </div>
-        <div data-key="68" class="key">
+        <div data-key="xx" class="key">
           <kbd>3</kbd>
           <span class="sound">kick</span>
         </div>
-        <div data-key="70" class="key">
+        <div data-key="xx" class="key">
           <kbd>4</kbd>
           <span class="sound">openhat</span>
         </div>
-        <div data-key="71" class="key">
+        <div data-key="xx" class="key">
           <kbd>5</kbd>
           <span class="sound">boom</span>
         </div>
-        <div data-key="72" class="key">
+        <div data-key="xx" class="key">
           <kbd>6</kbd>
           <span class="sound">ride</span>
         </div>
@@ -107,7 +107,7 @@
     </div>
     <!-- end of keys -->
 
-    <!-- keyboard ver. 2.0 -->
+    <!-- keyboard flexbox ver. 2.0 -->
     <div class="keyboard2">
       <section class="key-row2">
         <div class="key2 one">~</div>
@@ -200,47 +200,6 @@
     <audio data-key="76" src="sounds/tink.wav"></audio>
     <audio data-key="78" src="sounds/ride.wav"></audio>
 
-    <script>
-      // function playSound(e) {
-      //   console.log(e.keyCode);
-
-      //   // define constants
-      //   const audio = document.querySelector(`audio[data-key='${e.keyCode}']`);
-      //   const key = document.querySelector(`.key[data-key='${e.keyCode}']`);
-
-      //   // stop the function if there is no data-key value associated with the key
-      //   if (!audio) return;
-      //   console.log(audio);
-
-      //   // reset sound effect on keyup
-      //   audio.currentTime = 0; // rewind to the start
-      //   audio.play();
-      //   console.log(key);
-
-      //   // add the .playing class to the key element
-      //   key.classList.add('playing');
-      // }
-
-      // function removeTransition(e) {
-      //   console.log('removeTransition: ' + e);
-
-      //   // skip if it's not a transform transition
-      //   if (e.propertyName !== 'transform') return;
-      //   console.log('removeTransition after: ' + e.propertyName);
-
-      //   // remove the class .playing when transform is done
-      //   this.classList.remove('playing');
-      // }
-
-      // const keys = document.querySelectorAll('.key');
-
-      // // end the css animation transition
-      // keys.forEach(key =>
-      //   key.addEventListener('transitionend', removeTransition)
-      // );
-
-      // window.addEventListener('keydown', playSound);
-    </script>
     <script src="js/app.js"></script>
   </body>
 </html>

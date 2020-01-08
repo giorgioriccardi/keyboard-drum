@@ -2,12 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>JS Drum Kit</title>
+    <title>JS Keyboard Drum</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="keys">
-      <div class="keyboardRows keyboardRow-1">numbers here</div>
+      <div class="keyboardRows keyboardRow-1">
+        <div data-key="65" class="key">
+          <kbd>1</kbd>
+          <span class="sound">clap</span>
+        </div>
+        <div data-key="83" class="key">
+          <kbd>2</kbd>
+          <span class="sound">hihat</span>
+        </div>
+        <div data-key="68" class="key">
+          <kbd>3</kbd>
+          <span class="sound">kick</span>
+        </div>
+        <div data-key="70" class="key">
+          <kbd>4</kbd>
+          <span class="sound">openhat</span>
+        </div>
+        <div data-key="71" class="key">
+          <kbd>5</kbd>
+          <span class="sound">boom</span>
+        </div>
+        <div data-key="72" class="key">
+          <kbd>6</kbd>
+          <span class="sound">ride</span>
+        </div>
+      </div>
       <!-- end of keyboardRow-1 -->
       <div class="keyboardRows keyboardRow-2">
         <div data-key="65" class="key">
@@ -29,6 +54,10 @@
         <div data-key="71" class="key">
           <kbd>T</kbd>
           <span class="sound">boom</span>
+        </div>
+        <div data-key="72" class="key">
+          <kbd>Y</kbd>
+          <span class="sound">ride</span>
         </div>
       </div>
       <!-- end of keyboardRow-2 -->
@@ -77,6 +106,83 @@
       <!-- end of keyboardRow-5 -->
     </div>
     <!-- end of keys -->
+
+    <!-- keyboard ver. 2.0 -->
+    <div class="keyboard2">
+      <section class="key-row2">
+        <div class="key2 one">~</div>
+        <div class="key2 one">1</div>
+        <div class="key2 one">2</div>
+        <div class="key2 one">3</div>
+        <div class="key2 one">4</div>
+        <div class="key2 one">5</div>
+        <div class="key2 one">6</div>
+        <div class="key2 one">7</div>
+        <div class="key2 one">8</div>
+        <div class="key2 one">9</div>
+        <div class="key2 one">0</div>
+        <div class="key2 one">-</div>
+        <div class="key2 one">=</div>
+        <div class="key2 two">backspace</div>
+      </section>
+
+      <section class="key-row2">
+        <div class="key2 one-one-half l">tab</div>
+        <div class="key2 one">q</div>
+        <div class="key2 one">w</div>
+        <div class="key2 one">e</div>
+        <div class="key2 one">r</div>
+        <div class="key2 one">t</div>
+        <div class="key2 one">y</div>
+        <div class="key2 one">u</div>
+        <div class="key2 one">i</div>
+        <div class="key2 one">o</div>
+        <div class="key2 one">p</div>
+        <div class="key2 one">[</div>
+        <div class="key2 one">]</div>
+        <div class="key2 one">\</div>
+      </section>
+
+      <section class="key-row2">
+        <div class="key2 one-one-half l">search</div>
+        <div class="key2 one">a</div>
+        <div class="key2 one">s</div>
+        <div class="key2 one">d</div>
+        <div class="key2 one">f</div>
+        <div class="key2 one">g</div>
+        <div class="key2 one">h</div>
+        <div class="key2 one">j</div>
+        <div class="key2 one">k</div>
+        <div class="key2 one">l</div>
+        <div class="key2 one">;</div>
+        <div class="key2 one">'</div>
+        <div class="key2 two r">enter</div>
+      </section>
+
+      <section class="key-row2">
+        <div class="key2 two-two-half l">shift</div>
+        <div class="key2 one">z</div>
+        <div class="key2 one">x</div>
+        <div class="key2 one">c</div>
+        <div class="key2 one">v</div>
+        <div class="key2 one">b</div>
+        <div class="key2 one">n</div>
+        <div class="key2 one">m</div>
+        <div class="key2 one">&lt;</div>
+        <div class="key2 one">></div>
+        <div class="key2 one">/</div>
+        <div class="key2 two-two-half r">shift</div>
+      </section>
+
+      <section class="key-row2">
+        <div class="key2 two l">ctrl</div>
+        <div class="key2 two l">alt</div>
+        <div class="key2 five"><!-- Spacebar --></div>
+        <div class="key2 one-one-half">alt</div>
+        <div class="key2 one">ctrl</div>
+        <div class="arrowkey-container two-two-half"></div>
+      </section>
+    </div>
 
     <audio data-key="65" src="sounds/clap.wav"></audio>
     <audio data-key="69" src="sounds/clap.wav"></audio>
